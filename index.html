@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="logo">NETFLIX</h1>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="search-btn">🔍</button>
+                <button class="notifications-btn">🔔</button>
+                <div class="profile-menu">
+                    <img src="https://i.pravatar.cc/40?img=12" alt="Profile" class="profile-img">
+                    <span class="profile-name">User ▼</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Stranger Things</h2>
+            <p class="hero-description">
+                When a young boy vanishes, a small town uncovers a mystery involving secret experiments, 
+                terrifying supernatural forces, and one strange little girl.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-play">
+                    <span>▶ Play</span>
+                </button>
+                <button class="btn btn-info">
+                    <span>ℹ More Info</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-fade"></div>
+    </section>
+
+    <!-- Movie Rows -->
+    <main class="main-content">
+        <!-- Trending Now -->
+        <section class="movie-row">
+            <h3 class="row-title">Trending Now</h3>
+            <div class="row-posters">
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=1" alt="Movie 1">
+                    <div class="poster-overlay">
+                        <h4>Action Movie</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=2" alt="Movie 2">
+                    <div class="poster-overlay">
+                        <h4>Drama Series</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=3" alt="Movie 3">
+                    <div class="poster-overlay">
+                        <h4>Thriller</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=4" alt="Movie 4">
+                    <div class="poster-overlay">
+                        <h4>Comedy</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=5" alt="Movie 5">
+                    <div class="poster-overlay">
+                        <h4>Sci-Fi</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=6" alt="Movie 6">
+                    <div class="poster-overlay">
+                        <h4>Romance</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Picks for You -->
+        <section class="movie-row">
+            <h3 class="row-title">Top Picks for You</h3>
+            <div class="row-posters">
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=7" alt="Movie 7">
+                    <div class="poster-overlay">
+                        <h4>Mystery</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=8" alt="Movie 8">
+                    <div class="poster-overlay">
+                        <h4>Horror</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=9" alt="Movie 9">
+                    <div class="poster-overlay">
+                        <h4>Documentary</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=10" alt="Movie 10">
+                    <div class="poster-overlay">
+                        <h4>Fantasy</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=11" alt="Movie 11">
+                    <div class="poster-overlay">
+                        <h4>Adventure</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=12" alt="Movie 12">
+                    <div class="poster-overlay">
+                        <h4>Animation</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Releases -->
+        <section class="movie-row">
+            <h3 class="row-title">New Releases</h3>
+            <div class="row-posters">
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=13" alt="Movie 13">
+                    <div class="poster-overlay">
+                        <h4>Crime Drama</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=14" alt="Movie 14">
+                    <div class="poster-overlay">
+                        <h4>Historical</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=15" alt="Movie 15">
+                    <div class="poster-overlay">
+                        <h4>Sports</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=16" alt="Movie 16">
+                    <div class="poster-overlay">
+                        <h4>Music</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=17" alt="Movie 17">
+                    <div class="poster-overlay">
+                        <h4>Family</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=18" alt="Movie 18">
+                    <div class="poster-overlay">
+                        <h4>War</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Continue Watching -->
+        <section class="movie-row">
+            <h3 class="row-title">Continue Watching</h3>
+            <div class="row-posters">
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=19" alt="Movie 19">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%"></div>
+                    </div>
+                    <div class="poster-overlay">
+                        <h4>Episode 5</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=20" alt="Movie 20">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                    <div class="poster-overlay">
+                        <h4>Episode 3</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=21" alt="Movie 21">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 25%"></div>
+                    </div>
+                    <div class="poster-overlay">
+                        <h4>Episode 8</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=22" alt="Movie 22">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    <div class="poster-overlay">
+                        <h4>Episode 2</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=23" alt="Movie 23">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                    <div class="poster-overlay">
+                        <h4>Episode 6</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <img src="https://picsum.photos/300/450?random=24" alt="Movie 24">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 15%"></div>
+                    </div>
+                    <div class="poster-overlay">
+                        <h4>Episode 1</h4>
+                        <div class="poster-buttons">
+                            <button class="icon-btn">▶</button>
+                            <button class="icon-btn">+</button>
+                            <button class="icon-btn">ℹ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link">📘</a>
+                <a href="#" class="social-link">📸</a>
+                <a href="#" class="social-link">🐦</a>
+                <a href="#" class="social-link">📺</a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="#">Audio Description</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Gift Cards</a>
+                    <a href="#">Media Center</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Legal Notices</a>
+                    <a href="#">Cookie Preferences</a>
+                    <a href="#">Corporate Information</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <p class="copyright">© 2024 Netflix Clone - Demo Project</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
